@@ -41,7 +41,7 @@ export const Skills = () => {
                         >
                             {skills.map(skill => (
                               <div key={skill.name} className="item">
-                                <img src={skill.src} alt="Image" />
+                                <img src={skill.src} alt={skill.name} />
                                 <h5>{skill.name}</h5>
                             </div>
                             ))}

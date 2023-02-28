@@ -6,9 +6,9 @@ import 'animate.css';
 import TrackVisibility from 'react-on-screen';
 
 export const Contact = () => {
-  const [name, setName] = React.useState("");
-  const [email, setEmail] = React.useState("");
-  const [message, setMessage] = React.useState("");
+  const [name, setName] = React.useState('');
+  const [email, setEmail] = React.useState('');
+  const [message, setMessage] = React.useState('');
   const [buttonText, setButtonText] = useState('Send');
 
   function encode(data) {
@@ -43,9 +43,6 @@ export const Contact = () => {
               width="100%"
               height="200px"
               title="map"
-              frameBorder={0}
-              marginHeight={0}
-              marginWidth={0}
               // style={{ filter: "opacity(0.7)", borderRadius: "20px" }}
               src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d325516.3770455822!2d30.532690549999998!3d50.40203550000001!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d4cf4ee15a4505%3A0x764931d2170146fe!2z0JrQuNGX0LIsIDAyMDAw!5e0!3m2!1suk!2sua!4v1677493573800!5m2!1suk!2sua"
             />
@@ -97,6 +94,7 @@ export const Contact = () => {
                 <Row>
                   <Col size={12} sm={6} className="px-1">
                     <input
+                      value={name}
                       placeholder="Name"
                       type="text"
                       id="name"
@@ -106,6 +104,7 @@ export const Contact = () => {
                   </Col>
                   <Col size={12} sm={6} className="px-1">
                     <input
+                      value={email}
                       placeholder="Email Address"
                       type="email"
                       id="email"
@@ -115,6 +114,7 @@ export const Contact = () => {
                   </Col>
                   <Col size={12} className="px-1">
                   <textarea
+                    value={message}
                     rows="6"
                     placeholder="Message"
                     id="message"
