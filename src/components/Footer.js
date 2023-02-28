@@ -1,3 +1,4 @@
+import React from 'react'
 import { Container, Row, Col } from "react-bootstrap";
 import logo from "../assets/img/kate.png";
 import github from '../assets/img/socials/github.svg';

@@ -1,3 +1,4 @@
+import React from 'react'
 import { skills } from "./skillsList";
 import Carousel from 'react-multi-carousel';
 import 'react-multi-carousel/lib/styles.css';
@@ -50,7 +51,7 @@ export const Skills = () => {
                 </div>
             </div>
         </div>
-        <img className="background-image-left" src={colorSharp} alt="Image" />
+        <img className="background-image-left" src={colorSharp} alt={colorSharp} />
     </section>
   )
 }
