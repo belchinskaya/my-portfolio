@@ -80,25 +80,24 @@ export const Banner = () => {
         <Row className="aligh-items-center">
           <Col xs={12} md={6} xl={7}>
             <TrackVisibility>
-              {({ isVisible }) =>
-              <div className={isVisible ? "animate__animated animate__fadeIn" : ""}>
+              {({ isvisible }) =>
+              <div className={isvisible ? "animate__animated animate__fadeIn" : ""}>
                 <span className="tagline">Welcome to my Portfolio</span>
-                <h1>{`Hi! I'm Kateryna`} <span className="txt-rotate" dataperiod="1000" data-rotate='[ "Web Developer" ]'><span className="wrap">{text}</span></span></h1>
+                <h1>{`Hi! I'm Kateryna`}<br/>
+                <span className="txt-rotate" dataperiod="1000" data-rotate='[ "Web Developer" ]'><span className="wrap">{text}</span></span>
+                </h1>
                 <p>My name is Kateryna Belchynska. I am Junior Frontend Developer with a 0.5 year experience specializing in web development, HTML, CSS, JavaScript and React.js.
-                  My aim is to explore and learn information about software development and to help people to improve their lifes quality making it more comfortable.
+                  My aim is to explore and learn information about software development and to help people to improve quality of their lives making it more comfortable.
                   I am a communicative person, I open to everything new and good in finding common language with other people.
                   I really enjoy coding and want to improve my skills in it.
-        </p>
-                  <button onClick={() => console.log('connect')}>Let’s Connect <ArrowRightCircle size={25} /></button>
+                </p>
+                <a href="#contact" style={{textDecoration: "none"}}><button onClick={() => console.log('connect')}>Let’s Connect <ArrowRightCircle size={25} /></button></a>
               </div>}
             </TrackVisibility>
           </Col>
           <Col xs={12} md={6} xl={5}>
             <TrackVisibility>
-              {({ isVisible }) =>
-                <div className={isVisible ? "animate__animated animate__zoomIn" : ""}>
-                  <img src={headerImg} alt="Header Img"/>
-                </div>}
+              <img src={headerImg} alt="Header Img"/>
             </TrackVisibility>
           </Col>
         </Row>

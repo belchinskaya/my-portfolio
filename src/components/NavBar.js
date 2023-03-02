@@ -1,6 +1,7 @@
 import React from 'react'
 import { useState, useEffect } from "react";
 import { Navbar, Nav, Container } from "react-bootstrap";
+import { HashLink } from 'react-router-hash-link';
 import logo from '../assets/img/kate.png';
 import github from '../assets/img/socials/github.svg';
 import telegram from '../assets/img/socials/telegram.svg';
@@ -55,9 +56,9 @@ export const NavBar = () => {
                 <a href="https://www.t.me/belchynska"><img src={telegram} alt="telegram" /></a>
                 <a href="https://github.com/belchinskaya"><img src={github} alt="github" /></a>
               </div>
-              <a href="https://www.linkedin.com/in/kateryna-belchynska/">
-                <button className="vvd"><span>Let’s Connect</span></button>
-              </a>
+              <HashLink to='#contact'>
+                <button className="vvd"><span>Let's Connect</span></button>
+              </HashLink>
             </span>
           </Navbar.Collapse>
         </Container>
