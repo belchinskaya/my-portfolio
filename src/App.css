@@ -92,11 +92,13 @@ input:focus, textarea:focus, select:focus {
 }
 
 p.success {
-	color: green;
+  color: #58a308;
+  font-size: 20px;
 }
 
 p.danger {
-	color: red;
+  color: red;
+  font-size: 20px;
 }
 /************ Navbar Css ************/
 nav.navbar {
